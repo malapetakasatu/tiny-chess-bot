@@ -5,7 +5,7 @@ import sys
 import urllib.request
 import zlib
 
-DATA = "eNpFUkuybCEI2wpbUFTcjvLR6Z334l+wu+pNLA+EmIQTxZi0Waeo0eiUYAr2TtZwOFsj7zFIizNZOYC02+i2O+iOK589TejIGRTzCC1Zg3yeSSba0cDslt1JE7fmfg2Ah4JvqpD21WhPnbQaaioLYLac0AZp2e27obuYVsex28aNcWzGZyTpnruiBjPGVslq1I9VqNe0oOXVdvKFwMf+udyM2uPz4hWfeNe6w8II+XgzOB/AxXT52tKnXgK4kVSCCRfgbCIX1BpFuxWQ0zMmplsP02EvcISxNX2CDzefeOhylM+q6yfSqyPxzD74/ILwFGRFYbAhyUilXk6hXV8GiMlrZlVXhUGAwSfAaaH1DlH5/LfgHZGYfG3Nryobz8dLA1uIARk2sTzvYI6RQeRCQY+IMxJPPs2u54Q90uw6p76efNXLH1hh/cULDIwMpHOxH7qCn+gZjvqtZXan/wPPOrBG"
+DATA = "eNo1ksF1ACEIRFuhBRHFdhREi9jiM5jkwltkxD+wUbySiTcKDqFTolLU3cgFYVcX2i06WdmVvBxI5ApduZ1uv/qt4UpHT6cYR2nq7LTHGeRqDQXcjY6CtSlkKZ7DUB2mkGQ/NRDUhWresGYMXZ4xwtLVPmdgWLJYcSbnFEugQVl/uCsbLEG6y2akcORtg6WHfls8+XY+af98PfBax5PR4CgU6VbofDzmeAVgjJN+MZeT4VakuPsGkektdMvhb/L849u8MbWcX9TTEhydk8ULvE1ZKCTkLqfQYjCvarjBCMYT9gVi9FPorNB8QU2/Z8HSQs7l1wcmjjfGysHiC5JBV2/6mAM+rv669A6MpQhn4MzbA3/rxheW0nPTQjMXtXMVeyQkH6bDuZT+1oP/YEokKQohAUk9GE69/AM8Gp2V"
 BOOK = [g.split() for g in zlib.decompress(base64.b64decode(DATA)).decode().split("|")]
 
 VALS = {"p": 100, "n": 320, "b": 330, "r": 500, "q": 900, "k": 20000}
