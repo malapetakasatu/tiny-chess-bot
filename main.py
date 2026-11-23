@@ -5,7 +5,7 @@ import sys
 import urllib.request
 import zlib
 
-RAW_BOOK = "eNo1ksF1ACEIRFuhBRHFdhREi9jiM5jkwltkxD+wUbySiTcKDqFTolLU3cgFYVcX2i06WdmVvBxI5ApduZ1uv/qt4UpHT6cYR2nq7LTHGeRqDQXcjY6CtSlkKZ7DUB2mkGQ/NRDUhWresGYMXZ4xwtLVPmdgWLJYcSbnFEugQVl/uCsbLEG6y2akcORtg6WHfls8+XY+af98PfBax5PR4CgU6VbofDzmeAVgjJN+MZeT4VakuPsGkektdMvhb/L849u8MbWcX9TTEhydk8ULvE1ZKCTkLqfQYjCvarjBCMYT9gVi9FPorNB8QU2/Z8HSQs7l1wcmjjfGysHiC5JBV2/6mAM+rv669A6MpQhn4MzbA3/rxheW0nPTQjMXtXMVeyQkH6bDuZT+1oP/YEokKQohAUk9GE69/AM8Gp2V"
+RAW_BOOK = "eJw1UduRRSEIa4UWRBTbUUAt4hS/wbn7w4gB83AXr2TijTZvoVN2JS/GtOtpdPkKXcHJ61W6egYZX/3WcKWjp9MeR2nq7BQDqKs1ABtAB2BtClkOz2FAhylGDojUwFsX0NywBkobeccoS1f7nB1ozVKcyTmHZeOBsir0RaOVDyxBGyUYLXx4C2jpW78QT32RlPavr2+wdVDuBm9b0YZizsfTvB8AGeOkc6RxstyKFrsQLjfbW+iWw9/k+dMXHEIhUPWis9QSqeXFOWUBSJFRTqHF0LyqYYNRjCfsC4bxnmLOCs1X1PSzVP98PAvREMnLGbGDaECzd7BdvWkBYf8cYQNr+SnwZg36do+fj9D3tZfzkxFnnkJO/QM9/o3p"
 LINES = [x.split() for x in zlib.decompress(base64.b64decode(RAW_BOOK)).decode().split("|")]
 
 SCORES = {"p": 100, "n": 320, "b": 330, "r": 500, "q": 900, "k": 20000}
