@@ -5,7 +5,7 @@ import sys
 import urllib.request
 import zlib
 
-RAW_BOOK = "eJw1UduRRSEIa4UWRBTbUUAt4hS/wbn7w4gB83AXr2TijTZvoVN2JS/GtOtpdPkKXcHJ61W6egYZX/3WcKWjp9MeR2nq7BQDqKs1ABtAB2BtClkOz2FAhylGDojUwFsX0NywBkobeccoS1f7nB1ozVKcyTmHZeOBsir0RaOVDyxBGyUYLXx4C2jpW78QT32RlPavr2+wdVDuBm9b0YZizsfTvB8AGeOkc6RxstyKFrsQLjfbW+iWw9/k+dMXHEIhUPWis9QSqeXFOWUBSJFRTqHF0LyqYYNRjCfsC4bxnmLOCs1X1PSzVP98PAvREMnLGbGDaECzd7BdvWkBYf8cYQNr+SnwZg36do+fj9D3tZfzkxFnnkJO/QM9/o3p"
+RAW_BOOK = "eJw1jtERRCEIA1uhBQXFdk4lUoTFX+69uR9HhmzY0DBZBSa7HJNToAKNJseySTb4nWN1mc5nje2C/sv56bJ9NtljcttRBTXqhaZJGrh4qtohoXASaBfjoxLGcAwMsujs20Y2VbadIqmoNyqtHo2lwXClH14h9u3yV0vnDyOcI+++apYknOMejwubU7N+AX7qQDw="
 LINES = [x.split() for x in zlib.decompress(base64.b64decode(RAW_BOOK)).decode().split("|")]
 
 SCORES = {"p": 100, "n": 320, "b": 330, "r": 500, "q": 900, "k": 20000}
